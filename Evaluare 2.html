@@ -1,0 +1,121 @@
+<!DOCTYPE html
+<html>
+<head>
+<title>Evaluare 2</title>
+ <link rel="stylesheet" href="style.css">
+ </head>
+ <body> 
+ <br>
+  <br>
+   <br>
+   <br>
+ <mark><p style ="font-size:160%;font-family: verdana;margin-bottom: -20px;border:5px solid black;background-color: gray;color:#C0C0C0;"><b>Popovici Alexandru Andrei</p></mark></b>
+ <p style="font-size:100%;margin-bottom: -1,5px"><a href="https://teams.microsoft.com/_?lm=deeplink&lmsrc=NeutralHomePageWeb&cmpid=WebSignIn&culture=ro-ro&country=ro#/school/teams-grid/General?ctx=teamsGrid";>Alexandru@utcluj.ro</a></p>
+ <p><u><i>Specificatii tehnice ale statiei principale de lucru</p></u></i>
+<table style="margin-top:-3em;">
+  <tr>
+    <th>Denumire componenta</th>
+    <th>Producator</th>
+    <th>Parametri</th>
+  </tr>
+  <tr>
+    <td>Fx 8350</td>
+    <td>AMD</td>
+    <td>Socket:AM 3+
+	<br>
+	    4 GHz
+		<br>
+		32 nm
+	</td>
+  </tr>
+  <tr>
+    <td>GTX 1060</td>
+    <td>Nvidia</td>
+    <td>Frecventa procesor: 1806 MHz
+	<br>
+	    Memorie: 3Gb
+		<br>
+		Slot: PCI Express 3.0
+    </td>
+  </tr>
+  <tr>
+    <td>Sursa Thermaltake Litepower</td>
+    <td>Thermaltake</td>
+    <td>Putere: 650W
+	<br>
+	    Alimentare: 230V
+		<br>
+		Format: ATX
+		</td>
+  </tr>
+</table>
+<br>
+<div class="div1"><p><b><u><i>Structura retelei personale si accesul la internet</u></p><b></i>
+<img src="retea.png";width="300" height="450";align="right">
+<p style="text-align: center";><u><i>Caracteristicile conexiunii la retea</p></u></i>
+<ul style="margin-top:-4em;">
+  <li>Adresa MAC: 00-FF-89-D1-D4-E4</li>
+  <li>Adresa Ip: 25.74.222.126</li>
+  <li>Debit la download: 150Mbps</li>
+  <li>Debit la upload: 24 Mbps</li>
+</ul>  
+</div>
+<p style="text-align: right"><u><i>Utilizare resurselor</p></u></i>
+<div style="width: 1300px;height: 300px;margin-left: 8%;margin-top:-4.5em;background-color: #4682B4;">
+<div class="gallery">
+<div class="numbertext">1 / 3</div>
+  <a target="_blank">
+    <img src="cpu.png">
+  </a>
+</div>
+<div class="gallery">
+<div class="numbertext">2 / 3</div>
+  <a target="_blank">
+    <img src="gpu.png">
+  </a>
+</div>
+<div class="gallery">
+<div class="numbertext">3 / 3</div>
+  <a target="_blank">
+    <img src="mem.png"; name="mem";>
+  </a>
+</div>
+</div>
+<div style="text-align:center;">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("gallery");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+
